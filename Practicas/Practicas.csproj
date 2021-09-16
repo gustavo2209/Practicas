@@ -145,6 +145,7 @@
     <Compile Include="Cap12\frmDocumentos.Designer.cs">
       <DependentUpon>frmDocumentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap12\Numero.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
