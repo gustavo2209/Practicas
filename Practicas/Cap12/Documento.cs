@@ -26,7 +26,7 @@ namespace Practicas.Cap12
             {
                 suma += item.SubTotal;
             }
-            return MontoTotal;
+            return suma;
         }
     }
 }

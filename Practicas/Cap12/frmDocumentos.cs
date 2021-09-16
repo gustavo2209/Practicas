@@ -24,7 +24,7 @@ namespace Practicas.Cap12
 
         private void ProcesarFactura()
         {
-            var factura = new Factura();
+            Documento factura = new Factura();
             factura.Cliente = "Pedro Diaz";
             factura.Fecha = DateTime.Now;
             factura.NumeroDocumento = 1;
@@ -43,6 +43,10 @@ namespace Practicas.Cap12
             item2.Precio = 150;
             item2.Cantidad = 3;
             factura.Detalle[1] = item2;
+
+            var montoTotal = factura.CalcularTotal();
+
+            MessageBox.Show($"El monto total con IGV es:{montoTotal}");
         }
     }
 }

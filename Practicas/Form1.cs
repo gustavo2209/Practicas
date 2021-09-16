@@ -118,5 +118,10 @@ namespace Practicas
         {
             mostrarFormulario(new frmCuotas());
         }
+
+        private void ejercicio1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmDocumentos());
+        }
     }
 }
