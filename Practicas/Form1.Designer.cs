@@ -61,6 +61,7 @@ namespace Practicas
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap12POOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -302,7 +303,8 @@ namespace Practicas
             // cap12POOToolStripMenuItem
             // 
             this.cap12POOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejercicio1ToolStripMenuItem1});
+            this.ejercicio1ToolStripMenuItem1,
+            this.ejercicio2ToolStripMenuItem1});
             this.cap12POOToolStripMenuItem.Name = "cap12POOToolStripMenuItem";
             this.cap12POOToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.cap12POOToolStripMenuItem.Text = "Cap12 - POO";
@@ -313,6 +315,13 @@ namespace Practicas
             this.ejercicio1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.ejercicio1ToolStripMenuItem1.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem1.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem1_Click);
+            // 
+            // ejercicio2ToolStripMenuItem1
+            // 
+            this.ejercicio2ToolStripMenuItem1.Name = "ejercicio2ToolStripMenuItem1";
+            this.ejercicio2ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio2ToolStripMenuItem1.Text = "Ejercicio 2";
+            this.ejercicio2ToolStripMenuItem1.Click += new System.EventHandler(this.ejercicio2ToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -366,6 +375,7 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem ejercicio02ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cap12POOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio2ToolStripMenuItem1;
     }
 }
 

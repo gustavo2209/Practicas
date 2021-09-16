@@ -145,6 +145,12 @@
     <Compile Include="Cap12\frmDocumentos.Designer.cs">
       <DependentUpon>frmDocumentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap12\frmNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap12\frmNumero.Designer.cs">
+      <DependentUpon>frmNumero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap12\Numero.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
@@ -235,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap12\frmDocumentos.resx">
       <DependentUpon>frmDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap12\frmNumero.resx">
+      <DependentUpon>frmNumero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>

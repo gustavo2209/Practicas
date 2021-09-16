@@ -123,5 +123,10 @@ namespace Practicas
         {
             mostrarFormulario(new frmDocumentos());
         }
+
+        private void ejercicio2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmNumero());
+        }
     }
 }
