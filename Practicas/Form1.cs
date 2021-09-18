@@ -3,6 +3,8 @@ using Practicas.Cap08;
 using Practicas.Cap09;
 using Practicas.Cap10;
 using Practicas.Cap12;
+using Practicas.Cap13;
+using Practicas.Cap14;
 using Practicas.Examen_Parcial;
 using System;
 using System.Collections.Generic;
@@ -127,6 +129,16 @@ namespace Practicas
         private void ejercicio2ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             mostrarFormulario(new frmNumero());
+        }
+
+        private void ejercicio1ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmAuto());
+        }
+
+        private void ejercicio01ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmLab14_01());
         }
     }
 }

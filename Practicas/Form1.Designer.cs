@@ -64,6 +64,8 @@ namespace Practicas
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap13POOIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cap14LibreríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio01ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,10 +80,11 @@ namespace Practicas
             this.examenParcialToolStripMenuItem,
             this.cap12POOToolStripMenuItem,
             this.cap13POOIIToolStripMenuItem,
+            this.cap14LibreríasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1113, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1223, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -339,12 +342,28 @@ namespace Practicas
             this.ejercicio1ToolStripMenuItem2.Name = "ejercicio1ToolStripMenuItem2";
             this.ejercicio1ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.ejercicio1ToolStripMenuItem2.Text = "Ejercicio 01";
+            this.ejercicio1ToolStripMenuItem2.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem2_Click);
+            // 
+            // cap14LibreríasToolStripMenuItem
+            // 
+            this.cap14LibreríasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejercicio01ToolStripMenuItem3});
+            this.cap14LibreríasToolStripMenuItem.Name = "cap14LibreríasToolStripMenuItem";
+            this.cap14LibreríasToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
+            this.cap14LibreríasToolStripMenuItem.Text = "Cap14 - Librerías";
+            // 
+            // ejercicio01ToolStripMenuItem3
+            // 
+            this.ejercicio01ToolStripMenuItem3.Name = "ejercicio01ToolStripMenuItem3";
+            this.ejercicio01ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio01ToolStripMenuItem3.Text = "Ejercicio 01";
+            this.ejercicio01ToolStripMenuItem3.Click += new System.EventHandler(this.ejercicio01ToolStripMenuItem3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 450);
+            this.ClientSize = new System.Drawing.Size(1223, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -395,6 +414,8 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem ejercicio2ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cap13POOIIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cap14LibreríasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio01ToolStripMenuItem3;
     }
 }
 
