@@ -152,6 +152,8 @@
       <DependentUpon>frmNumero.cs</DependentUpon>
     </Compile>
     <Compile Include="Cap12\Numero.cs" />
+    <Compile Include="Cap13\Producto.cs" />
+    <Compile Include="Cap13\Vehiculo.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
