@@ -323,6 +323,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Cibertec.Application\Cibertec.Application.csproj">
+      <Project>{c109c876-3c31-4d1d-acf7-d79d467cc5f4}</Project>
+      <Name>Cibertec.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cibertec.Domain\Cibertec.Domain.csproj">
+      <Project>{309c8401-c1d9-4786-b582-60b90f7f063b}</Project>
+      <Name>Cibertec.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

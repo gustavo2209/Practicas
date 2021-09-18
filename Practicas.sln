@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicas", "Practicas\Practicas.csproj", "{E42783CC-EE26-41CC-8A60-91B2D9C5E68A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.Domain", "Cibertec.Domain\Cibertec.Domain.csproj", "{309C8401-C1D9-4786-B582-60B90F7F063B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.Application", "Cibertec.Application\Cibertec.Application.csproj", "{C109C876-3C31-4D1D-ACF7-D79D467CC5F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E42783CC-EE26-41CC-8A60-91B2D9C5E68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E42783CC-EE26-41CC-8A60-91B2D9C5E68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E42783CC-EE26-41CC-8A60-91B2D9C5E68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309C8401-C1D9-4786-B582-60B90F7F063B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309C8401-C1D9-4786-B582-60B90F7F063B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309C8401-C1D9-4786-B582-60B90F7F063B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309C8401-C1D9-4786-B582-60B90F7F063B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C109C876-3C31-4D1D-ACF7-D79D467CC5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C109C876-3C31-4D1D-ACF7-D79D467CC5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C109C876-3C31-4D1D-ACF7-D79D467CC5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C109C876-3C31-4D1D-ACF7-D79D467CC5F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
