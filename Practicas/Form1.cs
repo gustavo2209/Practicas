@@ -5,6 +5,7 @@ using Practicas.Cap10;
 using Practicas.Cap12;
 using Practicas.Cap13;
 using Practicas.Cap14;
+using Practicas.Cap15.frmColeccionesNoGenericas;
 using Practicas.Examen_Parcial;
 using System;
 using System.Collections.Generic;
@@ -139,6 +140,16 @@ namespace Practicas
         private void ejercicio01ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             mostrarFormulario(new frmLab14_01());
+        }
+
+        private void arrayListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmColeccionArrayList());
+        }
+
+        private void hashTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmHashTable());
         }
     }
 }
