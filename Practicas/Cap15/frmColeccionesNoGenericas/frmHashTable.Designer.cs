@@ -29,21 +29,22 @@ namespace Practicas.Cap15.frmColeccionesNoGenericas
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnHashTable = new System.Windows.Forms.Button();
+            this.btnCargarDatos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKey = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtValue = new System.Windows.Forms.Label();
+            this.lblValue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnHashTable
+            // btnCargarDatos
             // 
-            this.btnHashTable.Location = new System.Drawing.Point(32, 29);
-            this.btnHashTable.Name = "btnHashTable";
-            this.btnHashTable.Size = new System.Drawing.Size(105, 77);
-            this.btnHashTable.TabIndex = 0;
-            this.btnHashTable.Text = "HASHTABLE";
-            this.btnHashTable.UseVisualStyleBackColor = true;
+            this.btnCargarDatos.Location = new System.Drawing.Point(32, 29);
+            this.btnCargarDatos.Name = "btnCargarDatos";
+            this.btnCargarDatos.Size = new System.Drawing.Size(105, 77);
+            this.btnCargarDatos.TabIndex = 0;
+            this.btnCargarDatos.Text = "HASHTABLE";
+            this.btnCargarDatos.UseVisualStyleBackColor = true;
+            this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
             // 
             // label1
             // 
@@ -60,6 +61,7 @@ namespace Practicas.Cap15.frmColeccionesNoGenericas
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(100, 20);
             this.txtKey.TabIndex = 2;
+            this.txtKey.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKey_KeyPress);
             // 
             // label2
             // 
@@ -70,25 +72,25 @@ namespace Practicas.Cap15.frmColeccionesNoGenericas
             this.label2.TabIndex = 3;
             this.label2.Text = "VALUE:";
             // 
-            // txtValue
+            // lblValue
             // 
-            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtValue.Location = new System.Drawing.Point(229, 76);
-            this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(100, 23);
-            this.txtValue.TabIndex = 4;
-            this.txtValue.Text = "---";
+            this.lblValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblValue.Location = new System.Drawing.Point(229, 76);
+            this.lblValue.Name = "lblValue";
+            this.lblValue.Size = new System.Drawing.Size(100, 23);
+            this.lblValue.TabIndex = 4;
+            this.lblValue.Text = "---";
             // 
             // frmHashTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 140);
-            this.Controls.Add(this.txtValue);
+            this.Controls.Add(this.lblValue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtKey);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnHashTable);
+            this.Controls.Add(this.btnCargarDatos);
             this.Name = "frmHashTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHashTable";
@@ -99,10 +101,10 @@ namespace Practicas.Cap15.frmColeccionesNoGenericas
 
         #endregion
 
-        private System.Windows.Forms.Button btnHashTable;
+        private System.Windows.Forms.Button btnCargarDatos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKey;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label txtValue;
+        private System.Windows.Forms.Label lblValue;
     }
 }

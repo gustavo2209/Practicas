@@ -166,6 +166,12 @@
     <Compile Include="Cap14\frmLab14_01.Designer.cs">
       <DependentUpon>frmLab14_01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap15\frmColeccionesGenericas\frmColeccionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap15\frmColeccionesGenericas\frmColeccionList.Designer.cs">
+      <DependentUpon>frmColeccionList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap15\frmColeccionesNoGenericas\frmColeccionArrayList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap14\frmLab14_01.resx">
       <DependentUpon>frmLab14_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap15\frmColeccionesGenericas\frmColeccionList.resx">
+      <DependentUpon>frmColeccionList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cap15\frmColeccionesNoGenericas\frmColeccionArrayList.resx">
       <DependentUpon>frmColeccionArrayList.cs</DependentUpon>

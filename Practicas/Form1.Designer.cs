@@ -69,6 +69,7 @@ namespace Practicas
             this.cap15ColeccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrayListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -366,7 +367,8 @@ namespace Practicas
             // 
             this.cap15ColeccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arrayListToolStripMenuItem,
-            this.hashTableToolStripMenuItem});
+            this.hashTableToolStripMenuItem,
+            this.listToolStripMenuItem});
             this.cap15ColeccionesToolStripMenuItem.Name = "cap15ColeccionesToolStripMenuItem";
             this.cap15ColeccionesToolStripMenuItem.Size = new System.Drawing.Size(127, 20);
             this.cap15ColeccionesToolStripMenuItem.Text = "Cap15 - Colecciones";
@@ -384,6 +386,13 @@ namespace Practicas
             this.hashTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hashTableToolStripMenuItem.Text = "HashTable";
             this.hashTableToolStripMenuItem.Click += new System.EventHandler(this.hashTableToolStripMenuItem_Click);
+            // 
+            // listToolStripMenuItem
+            // 
+            this.listToolStripMenuItem.Name = "listToolStripMenuItem";
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listToolStripMenuItem.Text = "Listas";
+            this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -445,6 +454,7 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem cap15ColeccionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arrayListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hashTableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listToolStripMenuItem;
     }
 }
 
