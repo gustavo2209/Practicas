@@ -65,11 +65,14 @@ namespace Practicas
             this.ejercicio1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cap14LibreríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio01ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap15ColeccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrayListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diccionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pilasStackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -230,13 +233,13 @@ namespace Practicas
             // ejercicio01ToolStripMenuItem1
             // 
             this.ejercicio01ToolStripMenuItem1.Name = "ejercicio01ToolStripMenuItem1";
-            this.ejercicio01ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio01ToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.ejercicio01ToolStripMenuItem1.Text = "Ejercicio 01";
             // 
             // ejercicio02ToolStripMenuItem1
             // 
             this.ejercicio02ToolStripMenuItem1.Name = "ejercicio02ToolStripMenuItem1";
-            this.ejercicio02ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio02ToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.ejercicio02ToolStripMenuItem1.Text = "Ejercicio 02";
             this.ejercicio02ToolStripMenuItem1.Click += new System.EventHandler(this.ejercicio02ToolStripMenuItem1_Click);
             // 
@@ -352,23 +355,19 @@ namespace Practicas
             // ejercicio01ToolStripMenuItem3
             // 
             this.ejercicio01ToolStripMenuItem3.Name = "ejercicio01ToolStripMenuItem3";
-            this.ejercicio01ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio01ToolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
             this.ejercicio01ToolStripMenuItem3.Text = "Ejercicio 01";
             this.ejercicio01ToolStripMenuItem3.Click += new System.EventHandler(this.ejercicio01ToolStripMenuItem3_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // cap15ColeccionesToolStripMenuItem
             // 
             this.cap15ColeccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arrayListToolStripMenuItem,
             this.hashTableToolStripMenuItem,
-            this.listToolStripMenuItem});
+            this.listToolStripMenuItem,
+            this.diccionariosToolStripMenuItem,
+            this.colasToolStripMenuItem,
+            this.pilasStackToolStripMenuItem});
             this.cap15ColeccionesToolStripMenuItem.Name = "cap15ColeccionesToolStripMenuItem";
             this.cap15ColeccionesToolStripMenuItem.Size = new System.Drawing.Size(127, 20);
             this.cap15ColeccionesToolStripMenuItem.Text = "Cap15 - Colecciones";
@@ -393,6 +392,34 @@ namespace Practicas
             this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listToolStripMenuItem.Text = "Listas";
             this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // diccionariosToolStripMenuItem
+            // 
+            this.diccionariosToolStripMenuItem.Name = "diccionariosToolStripMenuItem";
+            this.diccionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diccionariosToolStripMenuItem.Text = "Diccionarios";
+            this.diccionariosToolStripMenuItem.Click += new System.EventHandler(this.diccionariosToolStripMenuItem_Click);
+            // 
+            // colasToolStripMenuItem
+            // 
+            this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colasToolStripMenuItem.Text = "Colas";
+            this.colasToolStripMenuItem.Click += new System.EventHandler(this.colasToolStripMenuItem_Click);
+            // 
+            // pilasStackToolStripMenuItem
+            // 
+            this.pilasStackToolStripMenuItem.Name = "pilasStackToolStripMenuItem";
+            this.pilasStackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pilasStackToolStripMenuItem.Text = "Pilas (Stack)";
+            this.pilasStackToolStripMenuItem.Click += new System.EventHandler(this.pilasStackToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -455,6 +482,9 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem arrayListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hashTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diccionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pilasStackToolStripMenuItem;
     }
 }
 

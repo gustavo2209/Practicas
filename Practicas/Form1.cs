@@ -157,5 +157,20 @@ namespace Practicas
         {
             mostrarFormulario(new frmColeccionList());
         }
+
+        private void diccionariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmColeccionDiccionario());
+        }
+
+        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmColeccionQueue());
+        }
+
+        private void pilasStackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmColeccionStack());
+        }
     }
 }
