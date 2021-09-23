@@ -32,8 +32,8 @@ namespace Practicas.Cap15.frmColeccionesGenericas
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lbItems = new System.Windows.Forms.ListBox();
             this.txtPais = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRecorrer = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -62,23 +62,25 @@ namespace Practicas.Cap15.frmColeccionesGenericas
             this.txtPais.Size = new System.Drawing.Size(100, 20);
             this.txtPais.TabIndex = 2;
             // 
-            // button1
+            // btnRecorrer
             // 
-            this.button1.Location = new System.Drawing.Point(43, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "RECORRER";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRecorrer.Location = new System.Drawing.Point(43, 165);
+            this.btnRecorrer.Name = "btnRecorrer";
+            this.btnRecorrer.Size = new System.Drawing.Size(170, 23);
+            this.btnRecorrer.TabIndex = 3;
+            this.btnRecorrer.Text = "RECORRER";
+            this.btnRecorrer.UseVisualStyleBackColor = true;
+            this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.Location = new System.Drawing.Point(43, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "ELIMINAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(43, 125);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(170, 23);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label1
             // 
@@ -95,8 +97,8 @@ namespace Practicas.Cap15.frmColeccionesGenericas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 215);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnRecorrer);
             this.Controls.Add(this.txtPais);
             this.Controls.Add(this.lbItems);
             this.Controls.Add(this.btnAgregar);
@@ -113,8 +115,8 @@ namespace Practicas.Cap15.frmColeccionesGenericas
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ListBox lbItems;
         private System.Windows.Forms.TextBox txtPais;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRecorrer;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label1;
     }
 }
