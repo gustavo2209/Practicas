@@ -73,6 +73,8 @@ namespace Practicas
             this.diccionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasStackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cap16InterfacesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio1ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +91,7 @@ namespace Practicas
             this.cap13POOIIToolStripMenuItem,
             this.cap14LibreríasToolStripMenuItem,
             this.cap15ColeccionesToolStripMenuItem,
+            this.cap16InterfacesToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -421,6 +424,21 @@ namespace Practicas
             this.pilasStackToolStripMenuItem.Text = "Pilas (Stack)";
             this.pilasStackToolStripMenuItem.Click += new System.EventHandler(this.pilasStackToolStripMenuItem_Click);
             // 
+            // cap16InterfacesToolStripMenuItem
+            // 
+            this.cap16InterfacesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejercicio1ToolStripMenuItem3});
+            this.cap16InterfacesToolStripMenuItem.Name = "cap16InterfacesToolStripMenuItem";
+            this.cap16InterfacesToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.cap16InterfacesToolStripMenuItem.Text = "Cap16 - Interfaces";
+            // 
+            // ejercicio1ToolStripMenuItem3
+            // 
+            this.ejercicio1ToolStripMenuItem3.Name = "ejercicio1ToolStripMenuItem3";
+            this.ejercicio1ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem3.Text = "Ejercicio 1";
+            this.ejercicio1ToolStripMenuItem3.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,6 +503,8 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem diccionariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pilasStackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cap16InterfacesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem3;
     }
 }
 

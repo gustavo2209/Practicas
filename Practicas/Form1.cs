@@ -7,6 +7,7 @@ using Practicas.Cap13;
 using Practicas.Cap14;
 using Practicas.Cap15.frmColeccionesNoGenericas;
 using Practicas.Cap15.frmColeccionesGenericas;
+using Practicas.Cap16.Ejercicio1;
 using Practicas.Examen_Parcial;
 using System;
 using System.Collections.Generic;
@@ -171,6 +172,11 @@ namespace Practicas
         private void pilasStackToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mostrarFormulario(new frmColeccionStack());
+        }
+
+        private void ejercicio1ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmCredito());
         }
     }
 }
