@@ -8,7 +8,7 @@ namespace Practicas.Cap17.Ejercicio_1
 {
     public class Poligono
     {
-        public int NLados { get; set; }
+        public int NLados { get; protected set; }
 
         public double Lado { get; set; }
 

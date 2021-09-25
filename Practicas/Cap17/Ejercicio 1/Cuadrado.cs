@@ -8,6 +8,11 @@ namespace Practicas.Cap17.Ejercicio_1
 {
     public class Cuadrado: Poligono
     {
+        public Cuadrado()
+        {
+            this.NLados = 4;
+        }
+
         public override double CalcularArea()
         {
             return Lado * Lado;

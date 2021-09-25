@@ -52,9 +52,9 @@ namespace Practicas.Cap17.Ejercicio_1
             if (flagChecked)
             {
                 if (tipoPoligono == TipoPoligono.Cuadrado)
-                    poligono = new Cuadrado() { NLados = 4 };
+                    poligono = new Cuadrado();
                 else
-                    poligono = new TraianguloEquilatero() { NLados = 3 };
+                    poligono = new TraianguloEquilatero();
             }
         }
     }

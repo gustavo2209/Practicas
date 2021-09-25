@@ -8,6 +8,11 @@ namespace Practicas.Cap17.Ejercicio_1
 {
     public class TraianguloEquilatero: Poligono
     {
+        public TraianguloEquilatero()
+        {
+            this.NLados = 3;
+        }
+
         public override double CalcularArea()
         {
             return Lado * Lado * Math.Sqrt(3) / 4;
