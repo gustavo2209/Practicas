@@ -38,7 +38,7 @@ namespace Practicas.Cap16.Ejercicio1
                 MessageBox.Show("DEBE SELECCIONAR UN TIPO DE CLIENTE");
             }
         }
-
+        
         private void rbClienteConsumo_CheckedChanged(object sender, EventArgs e)
         {
             if (rbClienteConsumo.Checked)

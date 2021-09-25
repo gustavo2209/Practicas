@@ -69,12 +69,14 @@ namespace Practicas
             this.arrayListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diccionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasStackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap16InterfacesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cap17HerenciaPolimorfismoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio1ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,10 +94,11 @@ namespace Practicas
             this.cap14LibreríasToolStripMenuItem,
             this.cap15ColeccionesToolStripMenuItem,
             this.cap16InterfacesToolStripMenuItem,
+            this.cap17HerenciaPolimorfismoToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1481, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1652, 24);
             this.menuStrip1.TabIndex = 0;
             // 
             // cap07TipoDatosToolStripMenuItem
@@ -378,49 +381,42 @@ namespace Practicas
             // arrayListToolStripMenuItem
             // 
             this.arrayListToolStripMenuItem.Name = "arrayListToolStripMenuItem";
-            this.arrayListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arrayListToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.arrayListToolStripMenuItem.Text = "ArrayList";
             this.arrayListToolStripMenuItem.Click += new System.EventHandler(this.arrayListToolStripMenuItem_Click);
             // 
             // hashTableToolStripMenuItem
             // 
             this.hashTableToolStripMenuItem.Name = "hashTableToolStripMenuItem";
-            this.hashTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hashTableToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.hashTableToolStripMenuItem.Text = "HashTable";
             this.hashTableToolStripMenuItem.Click += new System.EventHandler(this.hashTableToolStripMenuItem_Click);
             // 
             // listToolStripMenuItem
             // 
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.listToolStripMenuItem.Text = "Listas";
             this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // diccionariosToolStripMenuItem
             // 
             this.diccionariosToolStripMenuItem.Name = "diccionariosToolStripMenuItem";
-            this.diccionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diccionariosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.diccionariosToolStripMenuItem.Text = "Diccionarios";
             this.diccionariosToolStripMenuItem.Click += new System.EventHandler(this.diccionariosToolStripMenuItem_Click);
             // 
             // colasToolStripMenuItem
             // 
             this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
-            this.colasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.colasToolStripMenuItem.Text = "Colas";
             this.colasToolStripMenuItem.Click += new System.EventHandler(this.colasToolStripMenuItem_Click);
             // 
             // pilasStackToolStripMenuItem
             // 
             this.pilasStackToolStripMenuItem.Name = "pilasStackToolStripMenuItem";
-            this.pilasStackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pilasStackToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.pilasStackToolStripMenuItem.Text = "Pilas (Stack)";
             this.pilasStackToolStripMenuItem.Click += new System.EventHandler(this.pilasStackToolStripMenuItem_Click);
             // 
@@ -435,15 +431,37 @@ namespace Practicas
             // ejercicio1ToolStripMenuItem3
             // 
             this.ejercicio1ToolStripMenuItem3.Name = "ejercicio1ToolStripMenuItem3";
-            this.ejercicio1ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem3.Size = new System.Drawing.Size(127, 22);
             this.ejercicio1ToolStripMenuItem3.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem3.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem3_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // cap17HerenciaPolimorfismoToolStripMenuItem
+            // 
+            this.cap17HerenciaPolimorfismoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejercicio1ToolStripMenuItem4});
+            this.cap17HerenciaPolimorfismoToolStripMenuItem.Name = "cap17HerenciaPolimorfismoToolStripMenuItem";
+            this.cap17HerenciaPolimorfismoToolStripMenuItem.Size = new System.Drawing.Size(187, 20);
+            this.cap17HerenciaPolimorfismoToolStripMenuItem.Text = "Cap17 - Herencia/Polimorfismo";
+            // 
+            // ejercicio1ToolStripMenuItem4
+            // 
+            this.ejercicio1ToolStripMenuItem4.Name = "ejercicio1ToolStripMenuItem4";
+            this.ejercicio1ToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem4.Text = "Ejercicio 1";
+            this.ejercicio1ToolStripMenuItem4.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 450);
+            this.ClientSize = new System.Drawing.Size(1652, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -505,6 +523,8 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem pilasStackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cap16InterfacesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem cap17HerenciaPolimorfismoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem4;
     }
 }
 
