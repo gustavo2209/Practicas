@@ -9,6 +9,7 @@ using Practicas.Cap15.frmColeccionesNoGenericas;
 using Practicas.Cap15.frmColeccionesGenericas;
 using Practicas.Cap16.Ejercicio1;
 using Practicas.Cap17.Ejercicio_1;
+using Practicas.Cap17.Tarea.Modelo;
 using Practicas.Examen_Parcial;
 using System;
 using System.Collections.Generic;
@@ -183,6 +184,16 @@ namespace Practicas
         private void ejercicio1ToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             mostrarFormulario(new frmPoligonos());
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tareaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmColaborador());
         }
     }
 }

@@ -74,9 +74,10 @@ namespace Practicas
             this.pilasStackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap16InterfacesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap17HerenciaPolimorfismoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tareaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -435,17 +436,11 @@ namespace Practicas
             this.ejercicio1ToolStripMenuItem3.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem3.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem3_Click);
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // cap17HerenciaPolimorfismoToolStripMenuItem
             // 
             this.cap17HerenciaPolimorfismoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejercicio1ToolStripMenuItem4});
+            this.ejercicio1ToolStripMenuItem4,
+            this.tareaToolStripMenuItem});
             this.cap17HerenciaPolimorfismoToolStripMenuItem.Name = "cap17HerenciaPolimorfismoToolStripMenuItem";
             this.cap17HerenciaPolimorfismoToolStripMenuItem.Size = new System.Drawing.Size(187, 20);
             this.cap17HerenciaPolimorfismoToolStripMenuItem.Text = "Cap17 - Herencia/Polimorfismo";
@@ -456,6 +451,20 @@ namespace Practicas
             this.ejercicio1ToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.ejercicio1ToolStripMenuItem4.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem4.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem4_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // tareaToolStripMenuItem
+            // 
+            this.tareaToolStripMenuItem.Name = "tareaToolStripMenuItem";
+            this.tareaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tareaToolStripMenuItem.Text = "Tarea";
+            this.tareaToolStripMenuItem.Click += new System.EventHandler(this.tareaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -468,6 +477,7 @@ namespace Practicas
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -525,6 +535,7 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem cap17HerenciaPolimorfismoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem tareaToolStripMenuItem;
     }
 }
 
