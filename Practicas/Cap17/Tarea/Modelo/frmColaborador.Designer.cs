@@ -49,6 +49,8 @@ namespace Practicas.Cap17.Tarea.Modelo
             this.btnCalcular = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lblMontoBonificacion = new System.Windows.Forms.Label();
+            this.lblTiempoServicio = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,6 +161,7 @@ namespace Practicas.Cap17.Tarea.Modelo
             this.rbInstructor.TabStop = true;
             this.rbInstructor.Text = "INSTRUCTOR";
             this.rbInstructor.UseVisualStyleBackColor = true;
+            this.rbInstructor.CheckedChanged += new System.EventHandler(this.rbInstructor_CheckedChanged);
             // 
             // rbEmpleado
             // 
@@ -173,6 +176,7 @@ namespace Practicas.Cap17.Tarea.Modelo
             // 
             // cbNivel
             // 
+            this.cbNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNivel.FormattingEnabled = true;
             this.cbNivel.Location = new System.Drawing.Point(160, 32);
             this.cbNivel.Name = "cbNivel";
@@ -181,6 +185,7 @@ namespace Practicas.Cap17.Tarea.Modelo
             // 
             // cbEstado
             // 
+            this.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstado.FormattingEnabled = true;
             this.cbEstado.Location = new System.Drawing.Point(160, 64);
             this.cbEstado.Name = "cbEstado";
@@ -213,11 +218,12 @@ namespace Practicas.Cap17.Tarea.Modelo
             this.btnCalcular.TabIndex = 11;
             this.btnCalcular.Text = "CALCULAR BONIFICACIÓN";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(28, 411);
+            this.label8.Location = new System.Drawing.Point(28, 450);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(146, 13);
             this.label8.TabIndex = 12;
@@ -227,18 +233,40 @@ namespace Practicas.Cap17.Tarea.Modelo
             // 
             this.lblMontoBonificacion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMontoBonificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontoBonificacion.Location = new System.Drawing.Point(210, 410);
+            this.lblMontoBonificacion.Location = new System.Drawing.Point(210, 449);
             this.lblMontoBonificacion.Name = "lblMontoBonificacion";
             this.lblMontoBonificacion.Size = new System.Drawing.Size(220, 23);
             this.lblMontoBonificacion.TabIndex = 13;
             this.lblMontoBonificacion.Text = "---";
             this.lblMontoBonificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblTiempoServicio
+            // 
+            this.lblTiempoServicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTiempoServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempoServicio.Location = new System.Drawing.Point(210, 407);
+            this.lblTiempoServicio.Name = "lblTiempoServicio";
+            this.lblTiempoServicio.Size = new System.Drawing.Size(220, 23);
+            this.lblTiempoServicio.TabIndex = 15;
+            this.lblTiempoServicio.Text = "---";
+            this.lblTiempoServicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(28, 408);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(122, 13);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "TIEMPO DE SERVICIO:";
+            // 
             // frmColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 459);
+            this.ClientSize = new System.Drawing.Size(464, 492);
+            this.Controls.Add(this.lblTiempoServicio);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblMontoBonificacion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCalcular);
@@ -285,5 +313,7 @@ namespace Practicas.Cap17.Tarea.Modelo
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblMontoBonificacion;
+        private System.Windows.Forms.Label lblTiempoServicio;
+        private System.Windows.Forms.Label label10;
     }
 }
