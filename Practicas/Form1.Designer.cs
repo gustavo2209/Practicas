@@ -77,9 +77,10 @@ namespace Practicas
             this.cap17HerenciaPolimorfismoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.tareaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap18MiembrosCompartidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tarea1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tarea2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -451,28 +452,22 @@ namespace Practicas
             // ejercicio1ToolStripMenuItem4
             // 
             this.ejercicio1ToolStripMenuItem4.Name = "ejercicio1ToolStripMenuItem4";
-            this.ejercicio1ToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem4.Size = new System.Drawing.Size(127, 22);
             this.ejercicio1ToolStripMenuItem4.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem4.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem4_Click);
             // 
             // tareaToolStripMenuItem
             // 
             this.tareaToolStripMenuItem.Name = "tareaToolStripMenuItem";
-            this.tareaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tareaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.tareaToolStripMenuItem.Text = "Tarea";
             this.tareaToolStripMenuItem.Click += new System.EventHandler(this.tareaToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // cap18MiembrosCompartidosToolStripMenuItem
             // 
             this.cap18MiembrosCompartidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tarea1ToolStripMenuItem});
+            this.tarea1ToolStripMenuItem,
+            this.tarea2ToolStripMenuItem});
             this.cap18MiembrosCompartidosToolStripMenuItem.Name = "cap18MiembrosCompartidosToolStripMenuItem";
             this.cap18MiembrosCompartidosToolStripMenuItem.Size = new System.Drawing.Size(189, 20);
             this.cap18MiembrosCompartidosToolStripMenuItem.Text = "Cap18 - Miembros Compartidos";
@@ -483,6 +478,20 @@ namespace Practicas
             this.tarea1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tarea1ToolStripMenuItem.Text = "Tarea 1";
             this.tarea1ToolStripMenuItem.Click += new System.EventHandler(this.tarea1ToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // tarea2ToolStripMenuItem
+            // 
+            this.tarea2ToolStripMenuItem.Name = "tarea2ToolStripMenuItem";
+            this.tarea2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tarea2ToolStripMenuItem.Text = "Tarea 2";
+            this.tarea2ToolStripMenuItem.Click += new System.EventHandler(this.tarea2ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -555,6 +564,7 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem tareaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cap18MiembrosCompartidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tarea1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tarea2ToolStripMenuItem;
     }
 }
 

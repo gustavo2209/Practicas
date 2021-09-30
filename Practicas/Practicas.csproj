@@ -240,6 +240,12 @@
     </Compile>
     <Compile Include="Cap18\Tarea\Modelo\IColaborador.cs" />
     <Compile Include="Cap18\Tarea\Modelo\Instructor.cs" />
+    <Compile Include="Cap18\TiposCompartidos\frmOrdenamientoArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap18\TiposCompartidos\frmOrdenamientoArray.Designer.cs">
+      <DependentUpon>frmOrdenamientoArray.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap18\TiposCompartidos\FuncionesOrdenamiento.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap18\Tarea\Modelo\frmColaborador.resx">
       <DependentUpon>frmColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap18\TiposCompartidos\frmOrdenamientoArray.resx">
+      <DependentUpon>frmOrdenamientoArray.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>

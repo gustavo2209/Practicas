@@ -8,11 +8,11 @@ namespace Practicas.Cap18.TiposCompartidos
 {
     public class FuncionesOrdenamiento
     {
-        public static int[] Ascendente(ref int [] arreglo)
+        public static int[] Ascendente(int [] arreglo)
         {
             for(int j=0; j < arreglo.Length; j++)
             {
-                for(int i =0; i<arreglo.Length; i++)
+                for(int i =0; i<arreglo.Length - 1; i++)
                 {
                     if(arreglo[i] > arreglo[i + 1])
                     {

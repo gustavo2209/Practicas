@@ -9,6 +9,7 @@ using Practicas.Cap15.frmColeccionesNoGenericas;
 using Practicas.Cap15.frmColeccionesGenericas;
 using Practicas.Cap16.Ejercicio1;
 using Practicas.Cap17.Ejercicio_1;
+using Practicas.Cap18.TiposCompartidos;
 using Practicas.Cap17.Tarea.Modelo;
 using Practicas.Cap18.Tarea.Modelo;
 using Practicas.Examen_Parcial;
@@ -196,6 +197,10 @@ namespace Practicas
         {
             mostrarFormulario(new Practicas.Cap18.Tarea.Modelo.frmColaborador());
         }
-        
+
+        private void tarea2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new frmOrdenamientoArray());
+        }
     }
 }
