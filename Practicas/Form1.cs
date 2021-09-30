@@ -10,6 +10,7 @@ using Practicas.Cap15.frmColeccionesGenericas;
 using Practicas.Cap16.Ejercicio1;
 using Practicas.Cap17.Ejercicio_1;
 using Practicas.Cap17.Tarea.Modelo;
+using Practicas.Cap18.Tarea.Modelo;
 using Practicas.Examen_Parcial;
 using System;
 using System.Collections.Generic;
@@ -186,14 +187,15 @@ namespace Practicas
             mostrarFormulario(new frmPoligonos());
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void tareaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            mostrarFormulario(new frmColaborador());
+            mostrarFormulario(new Practicas.Cap17.Tarea.Modelo.frmColaborador());
         }
+
+        private void tarea1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new Practicas.Cap18.Tarea.Modelo.frmColaborador());
+        }
+        
     }
 }
