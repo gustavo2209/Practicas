@@ -247,6 +247,18 @@
       <DependentUpon>frmOrdenamientoArray.cs</DependentUpon>
     </Compile>
     <Compile Include="Cap18\TiposCompartidos\FuncionesOrdenamiento.cs" />
+    <Compile Include="Cap19\AppDbContext\NotasDbContext.cs" />
+    <Compile Include="Cap19\Domain\Model\Alumno.cs" />
+    <Compile Include="Cap19\Domain\Services\AlumnoServices.cs" />
+    <Compile Include="Cap19\Domain\Model\Nota.cs" />
+    <Compile Include="Cap19\frmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap19\frmNotas.Designer.cs">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cap19\Repositories\AlumnoRepository.cs" />
+    <Compile Include="Cap19\Repositories\IAlumnosRepository.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
@@ -378,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap18\TiposCompartidos\frmOrdenamientoArray.resx">
       <DependentUpon>frmOrdenamientoArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap19\frmNotas.resx">
+      <DependentUpon>frmNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>
