@@ -9,6 +9,6 @@ namespace Practicas.Cap19.AppDbContext
 {
     public class NotasDbContext
     {
-        public List<Alumno> Alumnos { get; set: }
+        public List<Alumno> Alumnos { get; set; }
     }
 }
