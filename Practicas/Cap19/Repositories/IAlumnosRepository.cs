@@ -12,6 +12,10 @@ namespace Practicas.Cap19.Repositories
     {
         Alumno Buscar(string nombre);
 
-        bool Grabar(Alumno alumno);
+        bool Agregar(Alumno alumno);
+
+        bool Modificar(Alumno alumno);
+
+        List<Alumno> ListadoAlumnos();
     }
 }

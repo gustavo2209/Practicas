@@ -23,10 +23,22 @@ namespace Practicas.Cap19.Repositories
             return _context.Alumnos.Where(item => item.Nombres == nombre).FirstOrDefault();
         }
 
-        public bool Grabar(Alumno alumno)
+        public bool Agregar(Alumno alumno)
         {
             _context.Alumnos.Add(alumno);
             return true;
+        }
+
+        public bool Modificar(Alumno alumno)
+        {
+            var alumnoRepo = _context.Alumnos.Where(item => item.Nombres == alumno.Nombres).FirstOrDefault();
+            alumnoRepo = alumno;
+            return true;
+        }
+
+        public List<Alumno> ListadoAlumnos()
+        {
+            return _context.Alumnos.ToList();
         }
     }
 }

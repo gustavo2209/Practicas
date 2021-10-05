@@ -9,7 +9,7 @@ namespace Practicas.Cap19.Domain.Model
     public class Alumno
     {
 
-        public Alumno(string pNombres)
+        public Alumno()
         {
             Notas = new List<Nota>();
 
