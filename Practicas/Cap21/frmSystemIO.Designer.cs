@@ -31,9 +31,13 @@ namespace Practicas.Cap21
         {
             this.components = new System.ComponentModel.Container();
             this.twCarpetas = new System.Windows.Forms.TreeView();
-            this.lvArchivos = new System.Windows.Forms.ListView();
             this.refrescarDirectorios = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refrescarDirectoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lvArchivos = new System.Windows.Forms.ListView();
+            this.colNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colFecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTamanio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.refrescarDirectorios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,16 +49,7 @@ namespace Practicas.Cap21
             this.twCarpetas.Name = "twCarpetas";
             this.twCarpetas.Size = new System.Drawing.Size(205, 450);
             this.twCarpetas.TabIndex = 0;
-            // 
-            // lvArchivos
-            // 
-            this.lvArchivos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvArchivos.HideSelection = false;
-            this.lvArchivos.Location = new System.Drawing.Point(205, 0);
-            this.lvArchivos.Name = "lvArchivos";
-            this.lvArchivos.Size = new System.Drawing.Size(453, 450);
-            this.lvArchivos.TabIndex = 1;
-            this.lvArchivos.UseCompatibleStateImageBehavior = false;
+            this.twCarpetas.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.twCarpetas_NodeMouseClick);
             // 
             // refrescarDirectorios
             // 
@@ -62,7 +57,6 @@ namespace Practicas.Cap21
             this.refrescarDirectoriosToolStripMenuItem});
             this.refrescarDirectorios.Name = "refrescarDirectorios";
             this.refrescarDirectorios.Size = new System.Drawing.Size(182, 26);
-            this.refrescarDirectorios.Click += new System.EventHandler(this.refrescarDirectorios_Click);
             // 
             // refrescarDirectoriosToolStripMenuItem
             // 
@@ -70,6 +64,42 @@ namespace Practicas.Cap21
             this.refrescarDirectoriosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.refrescarDirectoriosToolStripMenuItem.Text = "Refrescar directorios";
             this.refrescarDirectoriosToolStripMenuItem.Click += new System.EventHandler(this.refrescarDirectoriosToolStripMenuItem_Click);
+            // 
+            // lvArchivos
+            // 
+            this.lvArchivos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colNombre,
+            this.colFecha,
+            this.colTamanio,
+            this.colTipo});
+            this.lvArchivos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvArchivos.HideSelection = false;
+            this.lvArchivos.Location = new System.Drawing.Point(205, 0);
+            this.lvArchivos.Name = "lvArchivos";
+            this.lvArchivos.Size = new System.Drawing.Size(453, 450);
+            this.lvArchivos.TabIndex = 1;
+            this.lvArchivos.UseCompatibleStateImageBehavior = false;
+            this.lvArchivos.View = System.Windows.Forms.View.Details;
+            // 
+            // colNombre
+            // 
+            this.colNombre.Text = "Nombre del Archivo";
+            this.colNombre.Width = 150;
+            // 
+            // colFecha
+            // 
+            this.colFecha.Text = "Fecha";
+            this.colFecha.Width = 80;
+            // 
+            // colTamanio
+            // 
+            this.colTamanio.Text = "Tamaño";
+            this.colTamanio.Width = 80;
+            // 
+            // colTipo
+            // 
+            this.colTipo.Text = "Tipo";
+            this.colTipo.Width = 100;
             // 
             // frmSystemIO
             // 
@@ -79,6 +109,7 @@ namespace Practicas.Cap21
             this.Controls.Add(this.lvArchivos);
             this.Controls.Add(this.twCarpetas);
             this.Name = "frmSystemIO";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSystemIO";
             this.refrescarDirectorios.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -91,5 +122,9 @@ namespace Practicas.Cap21
         private System.Windows.Forms.ListView lvArchivos;
         private System.Windows.Forms.ContextMenuStrip refrescarDirectorios;
         private System.Windows.Forms.ToolStripMenuItem refrescarDirectoriosToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader colNombre;
+        private System.Windows.Forms.ColumnHeader colFecha;
+        private System.Windows.Forms.ColumnHeader colTamanio;
+        private System.Windows.Forms.ColumnHeader colTipo;
     }
 }

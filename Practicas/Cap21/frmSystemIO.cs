@@ -45,14 +45,37 @@ namespace Practicas.Cap21
             }
         }
 
-        private void refrescarDirectorios_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void refrescarDirectoriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ActualizarDirectorios();
+        }
+
+        private void twCarpetas_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            HandlerNode(e.Node);
+        }
+
+        private void HandlerNode(TreeNode nodoSeleccionado)
+        {
+            if (nodoSeleccionado != null)
+            {
+                lvArchivos.Items.Clear();
+
+                var fullPath = Path.Combine(CarpetaRoot, nodoSeleccionado.Text);
+
+                foreach (var archivo in Directory.GetFiles(fullPath))
+                {
+                    var fileInfo = new FileInfo(archivo);
+                    var listaPropiedades = new List<string>();
+                    listaPropiedades.Add(fileInfo.Name);
+                    listaPropiedades.Add(fileInfo.CreationTime.ToString());
+                    listaPropiedades.Add($"{fileInfo.Length} bytes");
+                    listaPropiedades.Add(fileInfo.Extension);
+                    
+                    var lvItem = new ListViewItem(listaPropiedades.ToArray());
+                    lvArchivos.Items.Add(lvItem);
+                }
+            }
         }
     }
 }
