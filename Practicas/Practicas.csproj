@@ -277,6 +277,12 @@
     <Compile Include="Cap20\frmPadre.Designer.cs">
       <DependentUpon>frmPadre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap21\frmCrearArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap21\frmCrearArchivo.Designer.cs">
+      <DependentUpon>frmCrearArchivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap21\frmSystemIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap20\frmPadre.resx">
       <DependentUpon>frmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap21\frmCrearArchivo.resx">
+      <DependentUpon>frmCrearArchivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cap21\frmSystemIO.resx">
       <DependentUpon>frmSystemIO.cs</DependentUpon>

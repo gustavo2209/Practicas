@@ -57,10 +57,10 @@ namespace Practicas.Cap21
 
         private void HandlerNode(TreeNode nodoSeleccionado)
         {
-            if (nodoSeleccionado != null)
-            {
-                lvArchivos.Items.Clear();
+            lvArchivos.Items.Clear();
 
+            if (nodoSeleccionado != null && nodoSeleccionado.Level > 0)
+            {
                 var fullPath = Path.Combine(CarpetaRoot, nodoSeleccionado.Text);
 
                 foreach (var archivo in Directory.GetFiles(fullPath))
@@ -76,6 +76,39 @@ namespace Practicas.Cap21
                     lvArchivos.Items.Add(lvItem);
                 }
             }
+        }
+
+        private void crearArchivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CrearArchivo();
+        }
+
+        private void CrearArchivo()
+        {
+            if(twCarpetas.SelectedNode != null)
+            {
+                var frm = new frmCrearArchivo();
+                frm.CarpetaRoot = Path.Combine(CarpetaRoot, twCarpetas.SelectedNode.Text);
+                frm.AfterSave += CallBackDespuesCrearArchivo;
+                frm.Show();
+            }
+        }
+
+        private void CallBackDespuesCrearArchivo(string archivo)
+        {
+            if(twCarpetas.SelectedNode != null)
+            {
+                HandlerNode(twCarpetas.SelectedNode);
+            }
+        }
+
+        private void lvArchivos_DoubleClick(object sender, EventArgs e)
+        {
+            if(lvArchivos.SelectedItems != null)
+            {
+                var lisItem = lvArchivos.SelectedItems[0];
+                MessageBox.Show(lisItem.Text.ToString());
+            }   
         }
     }
 }

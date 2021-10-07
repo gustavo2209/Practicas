@@ -38,6 +38,7 @@ namespace Practicas.Cap21
             this.colFecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTamanio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.crearArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refrescarDirectorios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,9 +55,10 @@ namespace Practicas.Cap21
             // refrescarDirectorios
             // 
             this.refrescarDirectorios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refrescarDirectoriosToolStripMenuItem});
+            this.refrescarDirectoriosToolStripMenuItem,
+            this.crearArchivoToolStripMenuItem});
             this.refrescarDirectorios.Name = "refrescarDirectorios";
-            this.refrescarDirectorios.Size = new System.Drawing.Size(182, 26);
+            this.refrescarDirectorios.Size = new System.Drawing.Size(182, 48);
             // 
             // refrescarDirectoriosToolStripMenuItem
             // 
@@ -80,6 +82,7 @@ namespace Practicas.Cap21
             this.lvArchivos.TabIndex = 1;
             this.lvArchivos.UseCompatibleStateImageBehavior = false;
             this.lvArchivos.View = System.Windows.Forms.View.Details;
+            this.lvArchivos.DoubleClick += new System.EventHandler(this.lvArchivos_DoubleClick);
             // 
             // colNombre
             // 
@@ -100,6 +103,13 @@ namespace Practicas.Cap21
             // 
             this.colTipo.Text = "Tipo";
             this.colTipo.Width = 100;
+            // 
+            // crearArchivoToolStripMenuItem
+            // 
+            this.crearArchivoToolStripMenuItem.Name = "crearArchivoToolStripMenuItem";
+            this.crearArchivoToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.crearArchivoToolStripMenuItem.Text = "Crear archivo";
+            this.crearArchivoToolStripMenuItem.Click += new System.EventHandler(this.crearArchivoToolStripMenuItem_Click);
             // 
             // frmSystemIO
             // 
@@ -126,5 +136,6 @@ namespace Practicas.Cap21
         private System.Windows.Forms.ColumnHeader colFecha;
         private System.Windows.Forms.ColumnHeader colTamanio;
         private System.Windows.Forms.ColumnHeader colTipo;
+        private System.Windows.Forms.ToolStripMenuItem crearArchivoToolStripMenuItem;
     }
 }
