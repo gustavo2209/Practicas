@@ -259,11 +259,29 @@
     </Compile>
     <Compile Include="Cap19\Repositories\AlumnoRepository.cs" />
     <Compile Include="Cap19\Repositories\IAlumnosRepository.cs" />
+    <Compile Include="Cap20\frmHijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap20\frmHijo.Designer.cs">
+      <DependentUpon>frmHijo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap20\frmOperaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cap20\frmOperaciones.Designer.cs">
       <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cap20\frmPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap20\frmPadre.Designer.cs">
+      <DependentUpon>frmPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cap21\frmSystemIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap21\frmSystemIO.Designer.cs">
+      <DependentUpon>frmSystemIO.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
@@ -400,8 +418,17 @@
     <EmbeddedResource Include="Cap19\frmNotas.resx">
       <DependentUpon>frmNotas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cap20\frmHijo.resx">
+      <DependentUpon>frmHijo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cap20\frmOperaciones.resx">
       <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap20\frmPadre.resx">
+      <DependentUpon>frmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cap21\frmSystemIO.resx">
+      <DependentUpon>frmSystemIO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>
