@@ -289,6 +289,9 @@
     <Compile Include="Cap21\frmSystemIO.Designer.cs">
       <DependentUpon>frmSystemIO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap24\Dominio\Queries\InvoiceQuery.cs" />
+    <Compile Include="Cap24\Infraestructura\BaseRepositorio.cs" />
+    <Compile Include="Cap24\Infraestructura\InvoiceRepositorio.cs" />
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
@@ -510,6 +513,8 @@
   <ItemGroup>
     <Folder Include="Cap17\Tarea\Formularios\" />
     <Folder Include="Cap18\Tarea\Formularios\" />
+    <Folder Include="Cap24\Dominio\Entities\" />
+    <Folder Include="Cap24\UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
