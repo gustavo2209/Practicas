@@ -16,6 +16,7 @@ namespace Practicas.Cap24.UI
         public frmFacturas()
         {
             InitializeComponent();
+            dgvListado.AutoGenerateColumns = false; // DESHABILITANDO LA AUTOGENERACION DE COLUMNAS
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

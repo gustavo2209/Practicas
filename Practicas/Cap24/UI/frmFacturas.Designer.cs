@@ -36,6 +36,10 @@ namespace Practicas.Cap24.UI
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvListado = new System.Windows.Forms.DataGridView();
+            this.colInvoiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCustomerFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCustomerLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
@@ -104,11 +108,40 @@ namespace Practicas.Cap24.UI
             // dgvListado
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colInvoiceId,
+            this.colCustomerFirstName,
+            this.colCustomerLastName,
+            this.colTotal});
             this.dgvListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListado.Location = new System.Drawing.Point(3, 16);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.Size = new System.Drawing.Size(794, 355);
             this.dgvListado.TabIndex = 0;
+            // 
+            // colInvoiceId
+            // 
+            this.colInvoiceId.DataPropertyName = "InvoiceId";
+            this.colInvoiceId.HeaderText = "Invoice";
+            this.colInvoiceId.Name = "colInvoiceId";
+            // 
+            // colCustomerFirstName
+            // 
+            this.colCustomerFirstName.DataPropertyName = "FirstName";
+            this.colCustomerFirstName.HeaderText = "Nombre del Cliente";
+            this.colCustomerFirstName.Name = "colCustomerFirstName";
+            // 
+            // colCustomerLastName
+            // 
+            this.colCustomerLastName.DataPropertyName = "LastName";
+            this.colCustomerLastName.HeaderText = "Apellidos del Cliente";
+            this.colCustomerLastName.Name = "colCustomerLastName";
+            // 
+            // colTotal
+            // 
+            this.colTotal.DataPropertyName = "Total";
+            this.colTotal.HeaderText = "Total";
+            this.colTotal.Name = "colTotal";
             // 
             // frmFacturas
             // 
@@ -137,5 +170,9 @@ namespace Practicas.Cap24.UI
         private System.Windows.Forms.DateTimePicker dtpFecha1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colInvoiceId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerFirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerLastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
     }
 }
