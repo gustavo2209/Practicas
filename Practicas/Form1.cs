@@ -13,6 +13,7 @@ using Practicas.Cap18.TiposCompartidos;
 using Practicas.Cap19;
 using Practicas.Cap20;
 using Practicas.Cap21;
+using Practicas.Cap24;
 using Practicas.Cap17.Tarea.Modelo;
 using Practicas.Cap18.Tarea.Modelo;
 using Practicas.Examen_Parcial;
@@ -224,6 +225,11 @@ namespace Practicas
         private void eejrcicio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mostrarFormulario(new frmSystemIO());
+        }
+
+        private void ejercicio1ToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new Cap24.UI.frmFacturas());
         }
     }
 }

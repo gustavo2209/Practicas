@@ -28,12 +28,12 @@ namespace Practicas.Cap24.Dominio.Queries
 
         public string BillingPostalCode { get; set; }
 
-        public double Total { get; set; }
+        public decimal Total { get; set; }
 
         public int TrackId { get; set; }
 
         public string TrackName { get; set; }
 
-        public double UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
     }
 }

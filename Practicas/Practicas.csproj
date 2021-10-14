@@ -292,6 +292,12 @@
     <Compile Include="Cap24\Dominio\Queries\InvoiceQuery.cs" />
     <Compile Include="Cap24\Infraestructura\BaseRepositorio.cs" />
     <Compile Include="Cap24\Infraestructura\InvoiceRepositorio.cs" />
+    <Compile Include="Cap24\UI\frmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap24\UI\frmFacturas.Designer.cs">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\DatosEstudianteException.cs" />
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
@@ -442,6 +448,9 @@
     <EmbeddedResource Include="Cap21\frmSystemIO.resx">
       <DependentUpon>frmSystemIO.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cap24\UI\frmFacturas.resx">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>
     </EmbeddedResource>
@@ -514,7 +523,6 @@
     <Folder Include="Cap17\Tarea\Formularios\" />
     <Folder Include="Cap18\Tarea\Formularios\" />
     <Folder Include="Cap24\Dominio\Entities\" />
-    <Folder Include="Cap24\UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,6 +19,7 @@ namespace Practicas.Cap24.Infraestructura
             {
                 IDbCommand cmd = cnx.CreateCommand();
                 cmd.CommandText = sql;
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 //AGREGANDO LOS PARAMETROS
 
@@ -52,6 +53,12 @@ namespace Practicas.Cap24.Infraestructura
 
             indice = reader.GetOrdinal("FirstName");
             entidad.FirstName = reader.GetString(indice);
+
+            indice = reader.GetOrdinal("LastName");
+            entidad.LastName = reader.GetString(indice);
+
+            indice = reader.GetOrdinal("Total");
+            entidad.Total = reader.GetDecimal(indice);
 
             return entidad;
         }
