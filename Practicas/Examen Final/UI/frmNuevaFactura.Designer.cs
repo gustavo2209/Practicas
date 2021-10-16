@@ -215,12 +215,13 @@ namespace Practicas.Examen_Final.UI
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(521, 442);
+            this.btnGrabar.Location = new System.Drawing.Point(454, 442);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.Size = new System.Drawing.Size(142, 23);
             this.btnGrabar.TabIndex = 3;
-            this.btnGrabar.Text = "GRABAR";
+            this.btnGrabar.Text = "REGISTRAR VENTA";
             this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // frmNuevaFactura
             // 

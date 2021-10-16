@@ -14,7 +14,7 @@ namespace Practicas.Examen_Final.Dominio.Entities
 
         public int TrackId { get; set; }
 
-        public double UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
 
         public int Quantity { get; set; }
     }
