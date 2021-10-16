@@ -1,5 +1,5 @@
 ﻿
-namespace Practicas.Cap24.UI
+namespace Practicas.Examen_Final.UI
 {
     partial class frmFacturas
     {
@@ -30,6 +30,8 @@ namespace Practicas.Cap24.UI
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCantidadRegistros = new System.Windows.Forms.Label();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dtpFecha2 = new System.Windows.Forms.DateTimePicker();
             this.dtpFecha1 = new System.Windows.Forms.DateTimePicker();
@@ -47,6 +49,8 @@ namespace Practicas.Cap24.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblCantidadRegistros);
+            this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.btnConsultar);
             this.groupBox1.Controls.Add(this.dtpFecha2);
             this.groupBox1.Controls.Add(this.dtpFecha1);
@@ -54,10 +58,30 @@ namespace Practicas.Cap24.UI
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(506, 76);
+            this.groupBox1.Size = new System.Drawing.Size(622, 115);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "FILTROS:";
+            // 
+            // lblCantidadRegistros
+            // 
+            this.lblCantidadRegistros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCantidadRegistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadRegistros.Location = new System.Drawing.Point(178, 75);
+            this.lblCantidadRegistros.Name = "lblCantidadRegistros";
+            this.lblCantidadRegistros.Size = new System.Drawing.Size(251, 23);
+            this.lblCantidadRegistros.TabIndex = 6;
+            this.lblCantidadRegistros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(518, 32);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 5;
+            this.btnNuevo.Text = "NUEVO";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnConsultar
             // 
@@ -98,9 +122,9 @@ namespace Practicas.Cap24.UI
             // 
             this.groupBox2.Controls.Add(this.dgvListado);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 76);
+            this.groupBox2.Location = new System.Drawing.Point(0, 115);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(506, 374);
+            this.groupBox2.Size = new System.Drawing.Size(622, 385);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RESULTADOS:";
@@ -116,7 +140,7 @@ namespace Practicas.Cap24.UI
             this.dgvListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListado.Location = new System.Drawing.Point(3, 16);
             this.dgvListado.Name = "dgvListado";
-            this.dgvListado.Size = new System.Drawing.Size(500, 355);
+            this.dgvListado.Size = new System.Drawing.Size(616, 366);
             this.dgvListado.TabIndex = 0;
             // 
             // colInvoiceId
@@ -147,7 +171,7 @@ namespace Practicas.Cap24.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 450);
+            this.ClientSize = new System.Drawing.Size(622, 500);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFacturas";
@@ -174,5 +198,7 @@ namespace Practicas.Cap24.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerFirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerLastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label lblCantidadRegistros;
     }
 }

@@ -88,9 +88,10 @@ namespace Practicas
             this.ejercicio2ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cap21ManejoDeArchivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eejrcicio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cap24ADONetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.examenFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -486,14 +487,14 @@ namespace Practicas
             // tarea1ToolStripMenuItem
             // 
             this.tarea1ToolStripMenuItem.Name = "tarea1ToolStripMenuItem";
-            this.tarea1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tarea1ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.tarea1ToolStripMenuItem.Text = "Tarea 1";
             this.tarea1ToolStripMenuItem.Click += new System.EventHandler(this.tarea1ToolStripMenuItem_Click);
             // 
             // tarea2ToolStripMenuItem
             // 
             this.tarea2ToolStripMenuItem.Name = "tarea2ToolStripMenuItem";
-            this.tarea2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tarea2ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.tarea2ToolStripMenuItem.Text = "Tarea 2";
             this.tarea2ToolStripMenuItem.Click += new System.EventHandler(this.tarea2ToolStripMenuItem_Click);
             // 
@@ -504,7 +505,8 @@ namespace Practicas
             this.toolStripSeparator1,
             this.cap20EventosToolStripMenuItem,
             this.cap21ManejoDeArchivosToolStripMenuItem,
-            this.cap24ADONetToolStripMenuItem});
+            this.cap24ADONetToolStripMenuItem,
+            this.examenFinalToolStripMenuItem});
             this.cap19WindowsFormToolStripMenuItem.Name = "cap19WindowsFormToolStripMenuItem";
             this.cap19WindowsFormToolStripMenuItem.Size = new System.Drawing.Size(143, 20);
             this.cap19WindowsFormToolStripMenuItem.Text = "Cap19 - Windows Form";
@@ -559,13 +561,6 @@ namespace Practicas
             this.eejrcicio1ToolStripMenuItem.Text = "Eejrcicio 1";
             this.eejrcicio1ToolStripMenuItem.Click += new System.EventHandler(this.eejrcicio1ToolStripMenuItem_Click);
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // cap24ADONetToolStripMenuItem
             // 
             this.cap24ADONetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -577,9 +572,23 @@ namespace Practicas
             // ejercicio1ToolStripMenuItem7
             // 
             this.ejercicio1ToolStripMenuItem7.Name = "ejercicio1ToolStripMenuItem7";
-            this.ejercicio1ToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem7.Size = new System.Drawing.Size(127, 22);
             this.ejercicio1ToolStripMenuItem7.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem7.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem7_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // examenFinalToolStripMenuItem
+            // 
+            this.examenFinalToolStripMenuItem.Name = "examenFinalToolStripMenuItem";
+            this.examenFinalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examenFinalToolStripMenuItem.Text = "Examen Final";
+            this.examenFinalToolStripMenuItem.Click += new System.EventHandler(this.examenFinalToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -663,6 +672,7 @@ namespace Practicas
         private System.Windows.Forms.ToolStripMenuItem eejrcicio1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cap24ADONetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem examenFinalToolStripMenuItem;
     }
 }
 

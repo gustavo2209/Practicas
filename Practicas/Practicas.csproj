@@ -289,6 +289,7 @@
     <Compile Include="Cap21\frmSystemIO.Designer.cs">
       <DependentUpon>frmSystemIO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cap24\Dominio\Queries\ClientesLista.cs" />
     <Compile Include="Cap24\Dominio\Queries\InvoiceQuery.cs" />
     <Compile Include="Cap24\Infraestructura\BaseRepositorio.cs" />
     <Compile Include="Cap24\Infraestructura\InvoiceRepositorio.cs" />
@@ -299,6 +300,25 @@
       <DependentUpon>frmFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\DatosEstudianteException.cs" />
+    <Compile Include="Examen Final\Dominio\Entities\Invoice.cs" />
+    <Compile Include="Examen Final\Dominio\Entities\InvoiceLine.cs" />
+    <Compile Include="Examen Final\Dominio\Queries\ClientesLista.cs" />
+    <Compile Include="Examen Final\Dominio\Queries\InvoiceQuery.cs" />
+    <Compile Include="Examen Final\Dominio\Queries\TrackLista.cs" />
+    <Compile Include="Examen Final\Infraestructura\BaseRepositorio.cs" />
+    <Compile Include="Examen Final\Infraestructura\InvoiceRepositorio.cs" />
+    <Compile Include="Examen Final\UI\frmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen Final\UI\frmFacturas.Designer.cs">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen Final\UI\frmNuevaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen Final\UI\frmNuevaFactura.Designer.cs">
+      <DependentUpon>frmNuevaFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Examen Parcial\frmEjercicio1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,6 +470,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cap24\UI\frmFacturas.resx">
       <DependentUpon>frmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen Final\UI\frmFacturas.resx">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen Final\UI\frmNuevaFactura.resx">
+      <DependentUpon>frmNuevaFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examen Parcial\frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>

@@ -31,5 +31,6 @@ namespace Practicas.Cap24.UI
             dgvListado.DataSource = listado;
             dgvListado.Refresh();
         }
+
     }
 }

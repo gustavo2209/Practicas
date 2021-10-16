@@ -1,4 +1,5 @@
-﻿using Practicas.Cap24.Dominio.Queries;
+﻿using Practicas.Examen_Final.Dominio.Entities;
+using Practicas.Examen_Final.Dominio.Queries;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practicas.Cap24.Infraestructura
+namespace Practicas.Examen_Final.Infraestructura
 {
     public class InvoiceRepositorio : BaseRepositorio
     {
@@ -152,7 +153,7 @@ namespace Practicas.Cap24.Infraestructura
         public List<ClientesLista> mostrarClientes()
         {
             var resultadoClientes = new List<ClientesLista>();
-            var sql = "SELECT CONCAT(FirstName, ' ', LastName) AS FullName FROM Customer ORDER BY 1 DESC";
+            var sql = "SELECT customerId, CONCAT(FirstName, ' ', LastName) AS FullName FROM Customer ORDER BY 1";
 
             using (var cnx = this.CreateDbConnection())
             {
@@ -182,6 +183,81 @@ namespace Practicas.Cap24.Infraestructura
             entidad.FullName = reader.GetString(indice);
 
             return entidad;
+        }
+
+        public List<TrackLista> mostrarTracks()
+        {
+            var resultadoTracks = new List<TrackLista>();
+            var sql = "SELECT TrackId, Name FROM Track ORDER BY 1";
+
+            using (var cnx = this.CreateDbConnection())
+            {
+                IDbCommand cmd = cnx.CreateCommand();
+                cmd.CommandText = sql;
+                cmd.CommandType = CommandType.Text;
+
+                cnx.Open();
+
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    resultadoTracks.Add(InvoiceQueryTracksMapping(reader));
+                }
+            }
+            return resultadoTracks;
+        }
+
+        private TrackLista InvoiceQueryTracksMapping(IDataReader reader)
+        {
+            var entidad = new TrackLista();
+
+            var indice = 0;
+
+            indice = reader.GetOrdinal("name");
+            entidad.Name = reader.GetString(indice);
+
+            return entidad;
+        }
+
+        public int Insertar(Invoice entity)
+        {
+            int result = 0;
+            using (var cnx = this.CreateDbConnection())
+            {
+                cnx.Open();
+
+                IDbCommand cmd = cnx.CreateCommand();
+                cmd.CommandText = "usp_InsertInvoice";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add(CreateParameter("@CustomerId", entity.CustomerId));
+                cmd.Parameters.Add(CreateParameter("@InvoiceDate", entity.InvoiceDate));
+                cmd.Parameters.Add(CreateParameter("@BillingAddress", entity.BillingAddress));
+                cmd.Parameters.Add(CreateParameter("@BillingCity", entity.BillingCity));
+                cmd.Parameters.Add(CreateParameter("@BillingState", entity.BillingState));
+                cmd.Parameters.Add(CreateParameter("@BillingCountry", entity.BillingCountry));
+                cmd.Parameters.Add(CreateParameter("@BillingPostalCode", entity.BillingPostalCode));
+                cmd.Parameters.Add(CreateParameter("@Total", entity.Total));
+
+                result = Convert.ToInt32(cmd.ExecuteScalar());
+
+                foreach(var item in entity.InvoiceLine)
+                {
+                    IDbCommand cmdDetalle = cnx.CreateCommand();
+                    cmdDetalle.CommandText = "ups_InsertInvoiceLine";
+                    cmdDetalle.CommandType = CommandType.StoredProcedure;
+
+                    cmdDetalle.Parameters.Add(CreateParameter("@InvoiceId", result));
+                    cmdDetalle.Parameters.Add(CreateParameter("@TrackId", item.TrackId));
+                    cmdDetalle.Parameters.Add(CreateParameter("@UnitPrice", item.UnitPrice));
+                    cmdDetalle.Parameters.Add(CreateParameter("@Quantity", item.Quantity));
+
+                    cmdDetalle.ExecuteNonQuery();
+                }
+            }
+
+            return result;
         }
     }
 }

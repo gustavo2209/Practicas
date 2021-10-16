@@ -231,5 +231,10 @@ namespace Practicas
         {
             mostrarFormulario(new Cap24.UI.frmFacturas());
         }
+
+        private void examenFinalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrarFormulario(new Examen_Final.UI.frmFacturas());
+        }
     }
 }
